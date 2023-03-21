@@ -1,5 +1,6 @@
 import React from 'react'
-import Logo from '../../img/img/logo.png'
+import Logo from '../img/img/logo.png'
+import Avatar from '../img/img/avatar.png'
 import {FaShoppingCart} from 'react-icons/fa'
 const Header = () => {
   return (
@@ -23,8 +24,10 @@ const Header = () => {
             <p className="text-xs text-white font-semibold">2</p>
           </div>
           </div>
-            
 
+            <img src={Avatar} alt="me"
+            className='w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer'
+             />
           </div>
        </div>
 
