@@ -1,10 +1,18 @@
 import React from 'react'
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { app } from '../firebase.config';
 import Logo from '../img/img/logo.png'
 import {motion} from 'framer-motion'
 import Avatar from '../img/img/avatar.png'
 import {FaShoppingCart} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 const Header = () => {
+  const firebaseAuth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+  const login= async () =>{
+    const response = await signInWithPopup(firebaseAuth,provider);
+
+  }
   return (
     <header className='fixed z-50 w-screen p-6 px-16'>
     {/* tablets and desktops  */}
@@ -27,9 +35,13 @@ const Header = () => {
           </div>
           </div>
 
+            <div className="relative">
             <motion.img whileHover={{scale:0.7}} whileTap={{ scale:0.6 }} src={Avatar} alt="me"
             className='w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer'
+             onClick={login}
+
              />
+            </div>
           </div>
        </div>
 
