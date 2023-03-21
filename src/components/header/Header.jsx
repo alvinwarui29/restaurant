@@ -13,7 +13,7 @@ const Header = () => {
     h-full 
     '
     >
-      
+      mern
     </div>
 
     {/* Mobile */}
