@@ -13,7 +13,7 @@ const app = () => {
       <main className='mt-24 p-8 w-full'>
         <Routes>
           <Route path='/*' element={<MainContainer/>}/>
-          <Route path='/createItem*' element={<CreateContainer/>}/>
+          <Route path='/createItem' element={<CreateContainer/>}/>
         </Routes>
       </main>
      </div>
