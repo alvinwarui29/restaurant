@@ -1,15 +1,20 @@
 
 import React from 'react'
+import Logo from '../../img/img/logo.png'
 
 const Header = () => {
   return (
-    <div className='fixed z-50 w-screen bg-slate-400 p-6
+    <div className='fixed z-50 w-screen  
     px-16px
     '>
     {/* desktop and tablets */}
     <div
-    className='hidden md:flex w-full h-full '
-    ></div>
+    className='hidden md:flex w-full 
+    h-full 
+    '
+    >
+      
+    </div>
 
     {/* Mobile */}
     <div
